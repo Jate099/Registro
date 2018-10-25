@@ -24,15 +24,17 @@ public class MainActivity extends AppCompatActivity {
 
         db = FirebaseDatabase.getInstance();
 
-        et_nombre.findViewById(R.id.et_nombre);
-        et_correo.findViewById(R.id.et_correo);
-        et_contraseña.findViewById(R.id.et_contraseña);
-        btn_registrarse.findViewById(R.id.btn_registrarse);
+        et_nombre = findViewById(R.id.et_nombre);
+        et_correo = findViewById(R.id.et_correo);
+        et_contraseña = findViewById(R.id.et_contraseña);
+        btn_registrarse = findViewById(R.id.btn_registrarse);
 
         btn_registrarse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Usuario usuario = new Usuario(et_nombre.getText().toString(), et_correo.getText().toString(), et_contraseña.getText().toString());
+
+                db.getReference().child("usuarios").setValue(usuario);
 
             }
         });
