@@ -7,33 +7,25 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre"
-        android:id="@+id/et_nombre"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Correo"
         android:id="@+id/et_correo"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
         android:id="@+id/et_contraseña"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Registrate"
-        android:id="@+id/btn_registrarse"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿tienes cuenta?"
+        android:id="@+id/tv_crear"
         android:textSize="20sp"
-        android:id="@+id/tv_jasacount"/>
+        android:text="¿No tienes cuenta?"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:id="@+id/btn_ingresar"/>
 
 
 </LinearLayout>

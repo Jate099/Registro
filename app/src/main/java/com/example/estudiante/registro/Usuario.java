@@ -12,6 +12,11 @@ public class Usuario {
         this.contraseña = contraseña;
     }
 
+    //se necesita para realizar la pag del perfil
+    public Usuario(){
+
+    }
+
     public String getUid() {
         return uid;
     }
